@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,200;1,300;1,400&display=swap" rel="stylesheet"> -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="nav-bar">
+                <div class="logo">
+                    <a href="index.html"><img src="../IMAGES/logo.jpg" alt="logo"  width="125px" > </a>
+                </div>
+                <nav>
+                    <ul id="menuitem">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">Products</a></li> 
+                        <li> <a href="contact.html">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="../IMAGES/cart.png" alt="cart" height="30px" width="30px"></a>
+                <img src="../IMAGES/menu.png" alt="cart" class="menu-icon" onclick="menutoggle()">
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h1>Shopping is a way to <br> gain A happiness!</h1>
+                    <p>Shopping is a bit of a relaxing hobby for me, <br>which is sometimes troubling for the bank balance.</p>
+                    <a href="" class="btn">Explore Now &#8594;</a>
+                </div>
+                <div class="col-2">
+                    <img src="../IMAGES/shooping.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- feature catgeries -->
+    <div class="categories">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="../IMAGES/top-1" alt="">
+                </div>
+                <div class="col-3">
+                    <img src="../IMAGES/top-4" alt="">
+                </div>
+                <div class="col-3">
+                    <img src="../IMAGES/top-2" alt="">
+                </div> 
+            </div>
+        </div> 
+    </div>
+    <!-- feature products -->
+    <div class="small-container">
+        <h2 class="title">featured Products</h2>
+        <div class="row">
+            <div class="col-4">
+               <a href="product_details.html"> <img src="../IMAGES/img1" alt="" width="200px" height="300px"></a>
+                <a href="product_details.html"><h4>Women Pure Cotton Kurta Dupatta Set</h4></a>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-sharp-half-stroke"></i>
+                </div>
+                <p>$1,222</p>
+            </div>
+            <div class="col-4">
+                <img src="../IMAGES/img2" alt="" width="200px" height="300px">
+                <h4>Woven Kanjivaram Pure Silk, Art Silk Saree </h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-sharp-half-stroke"></i>
+                </div>
+                <p>$1,450</p>
+            </div>
+            <div class="col-4">
+                <img src="../IMAGES/img3" alt="" width="200px" height="300px">
+                <h4>Casual Sleeveless Printed Women Blue Top</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-sharp-half-stroke"></i>
+                </div>
+                <p>$670</p>
+            </div>
+            <div class="col-4">
+                <img src="../IMAGES/img4" alt="" width="200px" height="300px">
+                <h4> Women A-line Maroon, White Dress
+
+                </h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-sharp-half-stroke"></i>
+                </div>
+                <p>$390</p>
+            </div>
+        </div>
+        <h2 class="title">Latest Produce</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="../IMAGES/product-1" alt="" width="200px" height="300px">
+                <h4>  Casual Puff Sleeves Solid Women White Top</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-sharp-half-stroke"></i>
+                </div>
+                <p>$990</p>
+            </div>
+            <div class="col-4">
+                <img src="../IMAGES/product-2" alt="" width="200px" height="300px">
+                <h4>Women Embroidered Ethnic Jacket</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-sharp-half-stroke"></i>
+                </div>
+                <p>$1,445</p>
+            </div>
+            <div class="col-4">
+                <img src="../IMAGES/product-3" alt="" width="200px" height="300px">
+                <h4>Women Wrap Pink Dress</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-sharp-half-stroke"></i>
+                </div>
+                <p>$4,889</p>
+            </div>
+            <div class="col-4">
+                <img src="../IMAGES/product-5" alt="" width="200px" height="300px">
+                <h4> Casual Sleeveless Printed Women Maroon Top
+
+                </h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-sharp-half-stroke"></i>
+                </div>
+                <p>$5,999</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="../IMAGES/img5" alt="" width="200px" height="300px">
+                <h4>women Casual Shoes</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-sharp-half-stroke"></i>
+                </div>
+                <p>$600</p>
+            </div>
+            <div class="col-4">
+                <img src="../IMAGES/img6" alt="" width="200px" height="300px">
+                <h4>Women Makeup kit</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-sharp-half-stroke"></i>
+                </div>
+                <p>$2,500</p>
+            </div>
+            <div class="col-4">
+                <img src="../IMAGES/img7" alt="" width="200px" height="300px">
+                <h4>Fireboot SmartWatch</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-sharp-half-stroke"></i>
+                </div>
+                <p>$1,555</p>
+            </div>
+            <div class="col-4">
+                <img src="../IMAGES/img8" alt="" width="200px" height="300px">
+                <h4> Women Black Heels
+
+                </h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-sharp-half-stroke"></i>
+                </div>
+                <p>$499</p>
+            </div>
+        </div>
+    </div>
+    <!-- offers -->
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="../IMAGES/img9" alt="SmartWatch" class="offer-img">
+                </div>
+                <div class="col-2">
+                    <p>Exclusively Available on SHOPAY</p>
+                    <h1>Noise SmartWatch</h1>
+                    <small>Noise Thrive 1.85'' Display with Bluetooth Calling, Music Playback & Voice Assistance Smartwatch  (Blue Strap, Regular)</small>
+                    <br>
+                    <a href="" class="btn">Buy Now &#8594;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- testimonial -->
+    <div class="testimonial">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat ad dolores animi, illo incidunt, vitae voluptatum assumenda tenetur aspernatur, cum amet debitis ut? Voluptas nihil, minima minus quam ex maxime!</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-sharp-half-stroke"></i>
+                    </div>
+                    <img src="../IMAGES/user1.jpg" alt="">
+                    <h3>xyz</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat ad dolores animi, illo incidunt, vitae voluptatum assumenda tenetur aspernatur, cum amet debitis ut? Voluptas nihil, minima minus quam ex maxime!</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-sharp-half-stroke"></i>
+                    </div>
+                    <img src="../IMAGES/user2.jpg" alt="">
+                    <h3>xyz</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat ad dolores animi, illo incidunt, vitae voluptatum assumenda tenetur aspernatur, cum amet debitis ut? Voluptas nihil, minima minus quam ex maxime!</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-sharp-half-stroke"></i>
+                    </div>
+                    <img src="../IMAGES/user3.jpg" alt="">
+                    <h3>xyz</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- brands  -->
+<div class="brands">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-5">
+                <img src="../IMAGES/b1.png" alt="" width="100px" height="100px">
+            </div>
+            <div class="col-5">
+                <img src="../IMAGES/b8.jpg" alt="" height="100px" width="100px">
+            </div>
+            <div class="col-5">
+                <img src="../IMAGES/b7.png" alt="" height="100px" width="100px">
+            </div>
+            <div class="col-5">
+                <img src="../IMAGES/b4.png" alt="" width="100px" height="100px">
+            </div>
+            <div class="col-5">
+                <img src="../IMAGES/b5.png" alt="" height="100px" width="100px">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- footer -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download our App</h3>
+                <p>Download app for android &  ios mobile phone</p>
+                <div class="app-logo">
+                    <img src="../IMAGES/playstore.png" alt="">
+                    <img src="../IMAGES/appstore.png" alt="">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="../IMAGES/logo.jpg" alt="" height="70px">
+                <p>save time for both the buyer and retailer, reducing phone calls about availability, specifications, hours of operation or other information easily found on company and product pages.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>useful links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Twitter</li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyrights">copyright 2023  - BhagyashriBamane</p>
+    </div>
+</div>
+
+<script>
+    var menuitem = document.getElementById("menuitem");
+menuitem.style.maxHeight == "0px";
+
+function menutoggle(){
+    if(menuitem.style.maxHeight == "0px")
+    {
+        menuitem.style.maxHeight == "200px";
+    }
+    else{
+        menuitem.style.maxHeight == "0px";
+    }
+}
+</script>
+    <!-- <script src="../JS/script.js"></script> -->
+</body>
+</html>

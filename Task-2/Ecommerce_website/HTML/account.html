@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> all Product | E-Commerce Website</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,200;1,300;1,400&display=swap" rel="stylesheet"> -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+   
+        <div class="container">
+            <div class="nav-bar">
+                <div class="logo">
+                    <img src="../IMAGES/logo.jpg" alt="logo"  width="125px" > 
+                </div>
+                <nav>
+                    <ul id="menuitem">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">Products</a></li> 
+                        <li> <a href="contact.html">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="../IMAGES/cart.png" alt="cart" height="30px" width="30px"></a>
+                <img src="../IMAGES/menu.png" alt="cart" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+
+   <div class="account">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img src="../IMAGES/shooping.jpg" width="100%">
+            </div>
+            <div class="col-2">
+                <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="login()">Login</span>
+                            <span onclick="register()">Register</span>
+                            <hr id="indicator">
+                        </div>
+                        <form action="" id="loginform">
+                            <input type="text" placeholder="Username">
+                            <input type="password" placeholder="Pasword">
+                            <button type="submit" class="btn">Login</button>
+                            <a href="">Forget Password</a>
+                        </form>
+                        <form action="" id="regform">
+                            <input type="text" placeholder="Username">
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="Pasword">
+                            <button type="submit" class="btn">Register</button>
+                        </form>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+   </div>
+   
+<!-- footer -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download our App</h3>
+                <p>Download app for android &  ios mobile phone</p>
+                <div class="app-logo">
+                    <img src="../IMAGES/playstore.png" alt="">
+                    <img src="../IMAGES/appstore.png" alt="">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="../IMAGES/logo.jpg" alt="" height="70px">
+                <p>save time for both the buyer and retailer, reducing phone calls about availability, specifications, hours of operation or other information easily found on company and product pages.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>useful links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Twitter</li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyrights">copyright 2023  - BhagyashriBamane</p>
+    </div>
+</div>
+
+<script>
+    var menuitem = document.getElementById("menuitem");
+menuitem.style.maxHeight == "0px";
+
+function menutoggle(){
+    if(menuitem.style.maxHeight == "0px")
+    {
+        menuitem.style.maxHeight == "200px";
+    }
+    else{
+        menuitem.style.maxHeight == "0px";
+    }
+}
+</script>
+
+<script>
+    var loginform = document.getElementById("loginform");
+    var regform = document.getElementById("regform");
+    var indicator = document.getElementById("indicator");
+
+    function register(){
+        regform.style.transform = "translateX(0px)";
+        loginform.style.transform = "translateX(0px)";
+        indicator.style.transform = "translateX(100px)";
+    }
+    function login(){
+        regform.style.transform = "translateX(300px)";
+        loginform.style.transform = "translateX(300px)";
+        indicator.style.transform = "translateX(0px)";
+
+    }
+</script>
+
+</body>
+</html>
